@@ -1,2 +1,2 @@
 #!/bin/bash
-gunicorn -w 4 -k uvicorn.workers.UvicornWorker app:app
+gunicorn --bind 0.0.0.0:10000 app:app
